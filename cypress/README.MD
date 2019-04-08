@@ -32,6 +32,7 @@ npm install --save-dev cypress-file-upload
 - estratégia de css selector em select
 - módulo com tratamento para massa de dados
 
+# guia de referência
 - arquivo cypress.json pode ser usado para tratar variaveis de ambiente como a base url
 - na pasta support podem ser criadas classes de helpers ou page objects
 - pasta integration ficam as specs
