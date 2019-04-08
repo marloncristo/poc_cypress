@@ -1,10 +1,10 @@
+Projeto para verificar framework cypress para preenchimento de um formulário de cadastros, utilizando pageobjects
+
 # criando projeto node
 npm init --y
 
 # instalando cypress
 npm install cypress --save-dev
-Projeto para verificar framework cypress para preenchimento de um formulário de cadastros, utilizando pageobjects
-
 
 # criando script para executar teste no package.json
 "cypress:open": "cypress open"
