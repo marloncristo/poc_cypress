@@ -10,9 +10,11 @@ describe("login", function(){
         cy.visit("/login")
     })
 
-    it("user obrigatório", function(){
+    it("user obrigatório", ()=>{
         cy.get('#submit-login').click()
-        cy.contains("Login ou CPF obrigatório")
+        const msg = "Login ou CPF obrigatório"
+        cy.contains(msg)
+        expect(msg).to.equal("Login ou CPF obrigatório erro")
         takeScreenshot('user obrigatorio')
     })
 
@@ -29,6 +31,8 @@ describe("login", function(){
     it("senha incorreta", function(){
         cy.get('#username')
         .type('qs.mpaula')
+        //validando se o texto foi inserido no campo
+        .should('have.value', 'qs.mpaula')
         cy.get('#password')
         .type('tcp@2010')
         .type('{enter}')

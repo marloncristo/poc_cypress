@@ -31,7 +31,10 @@ const dadosContato = {
 
 describe("cadastro motorista", () => {
   it("cadastrar motorista rodoviario brasileito sem pageobjects", () => {
+    
     cy.visit("/publico/cadastro/motorista");
+    //validando se a url foi atualizada
+    cy.url().should('include', '/publico/cadastro/motorista')
 
     cy.get("#mat-button-toggle-1").click();
 
@@ -39,7 +42,7 @@ describe("cadastro motorista", () => {
 
     cy.get("#nome-completo").type("motora brazuca");
     cy.get("#rg").type("78491094");
-    cy.get("#cpf").type("05239160945");
+    cy.get("#cpf").type("05239160945").focus();
 
     cy.get("#documento-habilitacao").type("7894545645");
     cy.get("#categoria-cnh").click();
@@ -86,4 +89,10 @@ describe("cadastro motorista", () => {
 
     helpers.preencherDadosContato(dadosContato);
   });
+
+  it.only("Fazer Login", ()=>{
+    cy.visit("http://vqaapp02:4200/login")
+    helpers.fazerLogin();
+  });
+
 });

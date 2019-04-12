@@ -71,6 +71,13 @@ class Helpers{
         const preencherObservacoes = cy.get('#text-area').type('teste automatizado com cypress')
    }
 
+   fazerLogin(){
+    cy.get('#username')
+    .type('qs.mpaula')
+    cy.get("#password")
+    .type('tcp@2019')
+    cy.get('#submit-login').click()
+   }
    
 }
 
