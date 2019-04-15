@@ -83,38 +83,3 @@ class Helpers{
 
 
 module.exports = Helpers
-
-
-
-
-
-// constructor() {
-//     this.btnRodoviario = element(by.id('mat-button-toggle-1'));
-//     this.btnFerroviario = element(by.id('mat-button-toggle-2'));
-//     this.btnBrasileiro = element(by.id('mat-radio-5'));
-//     this.btnEstrangeiro = element(by.id('mat-radio-6'));
-//     this.textNome = element(by.id('nome-completo'));
-//     this.textRg = element(by.id('rg'));
-//     this.textCPF = element(by.id('cpf'));
-//     this.textHabilitacao = element(by.id('documento-habilitacao'));
-//     this.selectCategoriaCNH = element(by.id('categoria-cnh'));
-//     this.selectCategoriaCNHItens = element(by.id('mat-option-3'));
-//     this.dataValidadeCNH = element(by.id('validade-cnh'));
-//     this.uploadDocHabilitacao = element(by.id('upload-button'));
-//     this.upload = element(by.css('input[type=file]'));
-//     this.textCEP = element(by.id('endereco-cep'));
-//     this.textEnderecoNumero = element(by.id('endereco-numero'));
-//     this.textTelefoneFixo = element(by.id('contato-telefone-residencial'));
-//     this.textTelefoneCelular = element(by.id('contato-telefone-celular'));
-//     this.textEmail = element(by.id('contato-email'));
-//     this.textObservacoes = element(by.id('text-area'));
-//     this.btnCadastrar = element(by.id('submit-form'));
-//     this.messageErrorCPF = element(by.id('mat-error-3'));
-//     this.messageErrorData = element(by.id('mat-error-0'));
-
-//     this.enderecoPais = element(by.id('endereco-pais'));
-//     this.enderecoCidade = element(by.id('endereco-cidade'));
-//     this.enderecoLogradouro = element(by.id('endereco-logradouro'));
-//     this.enderecoComplemento = element(by.id('endereco-complemento'));
-//     this.enderecoPaisItens = element(by.id('mat-option-37'));
-// }
