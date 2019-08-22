@@ -1,4 +1,5 @@
 Projeto para verificar framework cypress para preenchimento de um formulário de cadastros, utilizando pageobjects
+Testes de requests na api
 
 # criando projeto node
 npm init --y
